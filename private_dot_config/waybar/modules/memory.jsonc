@@ -5,12 +5,12 @@
             "m": 30, // medium
         },
         "interval": 30,
-        "format": "󰾆 {used}GB",
         "rotate": ${r_deg},
-        "format-m": "󰾅 {used}GB",
-        "format-h": "󰓅 {used}GB",
-        "format-c": " {used}GB",
-        "format-alt": "󰾆 {percentage}%",
+        "format": "󰾆 {percentage}%",
+        "format-m": "󰾅 {percentage}%",
+        "format-h": "󰓅 {percentage}%",
+        "format-c": " {percentage}%",
+        "format-alt": "󰾆 {used}GB",
         "max-length": 10,
         "tooltip": true,
         "tooltip-format": "󰾆 {percentage}%\n {used:0.1f}GB/{total:0.1f}GB"
