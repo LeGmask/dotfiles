@@ -1,6 +1,0 @@
-timeout 100 'brightnessctl get > /tmp/hypr/brightness_restore.dump && brightnessctl set 0%' resume 'brightnessctl set $(cat /tmp/hypr/brightness_restore.dump)'
-timeout 120 'swaylock -f'
-timeout 125 'hyprctl dispatch dpms off' resume 'hyprctl dispatch dpms on'
-timeout 300 'systemctl suspend' resume 'hyprctl dispatch dpms on'
-before-sleep 'swaylock -f'
-after-resume 'hyprctl dispatch dpms on && brightnessctl set $(cat /tmp/hypr/brightness_restore.dump)'
