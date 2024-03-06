@@ -7,22 +7,23 @@ ScrDir=`dirname "$(realpath "$0")"`
 source $ScrDir/globalcontrol.sh
 waybar_dir="${XDG_CONFIG_HOME:-$HOME/.config}/waybar"
 modules_dir="$waybar_dir/modules"
+conf_ctl="$waybar_dir/config.ctl"
 in_file="$waybar_dir/modules/style.css"
 out_file="$waybar_dir/style.css"
 src_file="${XDG_CONFIG_HOME:-$HOME/.config}/hypr/themes/theme.conf"
 
-# if [ "$EnableWallDcol" -eq 1 ] ; then
-#     ln -fs $waybar_dir/themes/Wall-Dcol.css $waybar_dir/themes/theme.css
-#     reload_flag=1
-# elif [ $(readlink $waybar_dir/themes/theme.css) != "$waybar_dir/themes/${gtkTheme}.css" ] ; then
-#     ln -fs $waybar_dir/themes/${gtkTheme}.css $waybar_dir/themes/theme.css
-#     reload_flag=1
-# fi
+if [ "$EnableWallDcol" -eq 1 ] ; then
+    ln -fs $waybar_dir/themes/Wall-Dcol.css $waybar_dir/themes/theme.css
+    reload_flag=1
+elif [ $(readlink $waybar_dir/themes/theme.css) != "$waybar_dir/themes/${gtkTheme}.css" ] ; then
+    ln -fs $waybar_dir/themes/${gtkTheme}.css $waybar_dir/themes/theme.css
+    reload_flag=1
+fi
 
 
 # calculate height from control file or monitor res
 
-b_height=`grep '^1|' $waybar_dir/config.ctl | cut -d '|' -f 2`
+b_height=`grep '^1|' $conf_ctl | cut -d '|' -f 2`
 
 if [ -z $b_height ] || [ "$b_height" == "0" ]; then
     y_monres=`cat /sys/class/drm/*/modes | head -1 | cut -d 'x' -f 2`
@@ -53,6 +54,63 @@ if [ $s_fontpx -lt 10 ] ; then
 fi
 
 
+# adjust values for vert/horz
+
+export w_position=`grep '^1|' $conf_ctl | cut -d '|' -f 3`
+case ${w_position} in
+    top|bottom)
+        export x1g_margin=${g_margin}
+        export x2g_margin=0
+        export x3g_margin=${g_margin}
+        export x4g_margin=0
+        export x1rb_radius=0
+        export x2rb_radius=${b_radius}
+        export x3rb_radius=${b_radius}
+        export x4rb_radius=0
+        export x1lb_radius=${b_radius}
+        export x2lb_radius=0
+        export x3lb_radius=0
+        export x4lb_radius=${b_radius}
+        export x1rc_radius=0
+        export x2rc_radius=${c_radius}
+        export x3rc_radius=${c_radius}
+        export x4rc_radius=0
+        export x1lc_radius=${c_radius}
+        export x2lc_radius=0
+        export x3lc_radius=0
+        export x4lc_radius=${c_radius}
+        export x1="top"
+        export x2="bottom"
+        export x3="left" 
+        export x4="right" ;;
+    left|right)
+        export x1g_margin=0
+        export x2g_margin=${g_margin}
+        export x3g_margin=0
+        export x4g_margin=${g_margin}
+        export x1rb_radius=0
+        export x2rb_radius=0
+        export x3rb_radius=${b_radius}
+        export x4rb_radius=${b_radius}
+        export x1lb_radius=${b_radius}
+        export x2lb_radius=${b_radius}
+        export x3lb_radius=0
+        export x4lb_radius=0
+        export x1rc_radius=0
+        export x2rc_radius=${c_radius}
+        export x3rc_radius=${c_radius}
+        export x4rc_radius=0
+        export x1lc_radius=${c_radius}
+        export x2lc_radius=0
+        export x3lc_radius=0
+        export x4lc_radius=${c_radius}
+        export x1="left"
+        export x2="right"
+        export x3="top" 
+        export x4="bottom" ;;
+esac
+
+
 # list modules and generate theme style
 
 export modules_ls=$(grep -m 1 '".*.": {'  --exclude="$modules_dir/footer.jsonc" $modules_dir/*.jsonc | cut -d '"' -f 2 | awk -F '/' '{ if($1=="custom") print "#custom-"$NF"," ; else print "#"$NF","}')
@@ -74,3 +132,4 @@ if [ "$reload_flag" == "1" ] ; then
     waybar > /dev/null 2>&1 &
     # killall -SIGUSR2 waybar
 fi
+
