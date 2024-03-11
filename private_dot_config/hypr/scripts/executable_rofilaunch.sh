@@ -11,10 +11,12 @@ case $1 in
     d)  r_mode="drun" ;; 
     w)  r_mode="window" ;;
     f)  r_mode="filebrowser" ;;
+    s)  r_mode="ssh" ;;
     h)  echo -e "rofilaunch.sh [action]\nwhere action,"
         echo "d :  drun mode"
         echo "w :  window mode"
         echo "f :  filebrowser mode,"
+        echo "s :  ssh mode"
         exit 0 ;;
     *)  r_mode="drun" ;;
 esac
