@@ -2,9 +2,9 @@
         "format": "{}",
         "rotate": ${r_deg},
         "exec": "echo ; echo 󰟡 switch theme",
-        "on-click": "~/.config/hypr/scripts/themeswitch.sh -n",
-        "on-click-right": "~/.config/hypr/scripts/themeswitch.sh -p",
-        "on-click-middle": "sleep 0.1 && ~/.config/hypr/scripts/themeselect.sh",
+        "on-click": "~/.config/hyprdots/scripts/themeswitch.sh -n",
+        "on-click-right": "~/.config/hyprdots/scripts/themeswitch.sh -p",
+        "on-click-middle": "sleep 0.1 && ~/.config/hyprdots/scripts/themeselect.sh",
         "interval" : 86400, // once every day
         "tooltip": true
     },
