@@ -1,6 +1,6 @@
     "custom/keybindhint": {
         "format": " ",
         "rotate": ${r_deg},
-        "on-click": "Hyprdots show binds",
+        "on-click": "~/.config/hyprdots/scripts/keybinds_hint.sh",
     },
 
