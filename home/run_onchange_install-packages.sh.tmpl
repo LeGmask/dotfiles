@@ -1,0 +1,11 @@
+{{ if eq .chezmoi.os "linux" -}}
+#!/bin/bash
+
+packages=(
+{{ range .packages.linux.paru -}}
+  {{ . | quote }}
+{{ end -}}
+)
+
+paru -S "${packages[@]}"
+{{ end -}}
