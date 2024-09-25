@@ -3,3 +3,5 @@ packages:
     paru:
     - 'ly'
     - 'lazygit'
+    - 'downgrade'
+    - 'hyprland'
