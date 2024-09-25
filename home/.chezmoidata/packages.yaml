@@ -16,3 +16,4 @@ packages:
     - 'firefox-developer-edition'
     - 'nwg-displays'
     - 'visual-studio-code-bin'
+    - 'brightnessctl'
