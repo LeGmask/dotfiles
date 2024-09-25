@@ -7,5 +7,5 @@ packages=(
 {{ end -}}
 )
 
-paru -S "${packages[@]}"
+paru -S --needed "${packages[@]}"
 {{ end -}}
