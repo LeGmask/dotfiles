@@ -4,6 +4,11 @@ packages:
     # archlinux
     - 'downgrade'
 
+    # network
+    - 'networkmanager'
+    - 'nm-connection-editor'
+    - 'network-manager-applet'
+
     # dm
     - 'ly'
     
