@@ -1,5 +1,6 @@
 services:
   linux:
-    enabled:
+    system:
       - 'ly.service'
+    user:
       - 'gcr-ssh-agent.socket'
