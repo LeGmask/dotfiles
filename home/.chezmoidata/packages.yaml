@@ -37,6 +37,7 @@ packages:
     - 'firefox-developer-edition'
     - 'visual-studio-code-bin'
     - 'nautilus'
+    - 'vlc'
 
     - 'brightnessctl'
     - 'fastfetch'
