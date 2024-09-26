@@ -1,20 +1,33 @@
 packages:
   linux:
     paru:
-    - 'ly'
-    - 'lazygit'
+    # archlinux
     - 'downgrade'
-    - 'hyprland'
-    - 'xdg-user-dirs'
-    - 'xdg-user-dirs-gtk'
-    - 'xdg-desktop-portal-hyprland'
-    - 'kitty'
-    - 'ttf-firacode-nerd'
+
+    # dm
+    - 'ly'
+    
+    # fonts
     - 'noto-fonts'
     - 'noto-fonts-cjk'
     - 'noto-fonts-emoji'
+    - 'ttf-firacode-nerd'
+
+    # hyprland ecosystem
+    - 'hyprland'
+    - 'hyprlock'
+    - 'hypridle'
+
+    # xdg
+    - 'xdg-user-dirs'
+    - 'xdg-user-dirs-gtk'
+    - 'xdg-desktop-portal-hyprland'
+    
+    - 'kitty'
     - 'firefox-developer-edition'
-    - 'nwg-displays'
     - 'visual-studio-code-bin'
+
     - 'brightnessctl'
     - 'fastfetch'
+    - 'nwg-displays'
+    - 'lazygit'
