@@ -1,7 +1,11 @@
 {{ if eq .chezmoi.os "linux" -}}
 #!/bin/bash
 
-{{ range .services.linux.enabled -}}
+{{ range .services.linux.system -}}
 sudo systemctl enable --now {{ . }}
+{{ end -}}
+
+{{ range .services.linux.user -}}
+systemctl --user enable --now {{ . }}
 {{ end -}}
 {{ end -}}
