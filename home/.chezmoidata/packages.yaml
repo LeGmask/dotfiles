@@ -36,6 +36,7 @@ packages:
     - 'kitty'
     - 'firefox-developer-edition'
     - 'visual-studio-code-bin'
+    - 'nautilus'
 
     - 'brightnessctl'
     - 'fastfetch'
