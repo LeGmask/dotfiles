@@ -2,3 +2,4 @@ services:
   linux:
     enabled:
       - 'ly.service'
+      - 'gcr-ssh-agent.socket'
