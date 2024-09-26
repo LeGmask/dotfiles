@@ -37,3 +37,7 @@ packages:
     - 'nwg-displays'
     - 'lazygit'
     - 'ncdu'
+
+    # gtk
+    - 'gtk4'
+    - 'gtk3'
