@@ -27,6 +27,11 @@ packages:
     - 'xdg-user-dirs'
     - 'xdg-user-dirs-gtk'
     - 'xdg-desktop-portal-hyprland'
+
+    # secrets
+    - 'seahorse'
+    - 'gnome-keyring'
+    - 'polkit-gnome'
     
     - 'kitty'
     - 'firefox-developer-edition'
