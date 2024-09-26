@@ -43,6 +43,7 @@ packages:
     - 'nwg-displays'
     - 'lazygit'
     - 'ncdu'
+    - 'gnome-font-viewer'
 
     # gtk
     - 'gtk4'
