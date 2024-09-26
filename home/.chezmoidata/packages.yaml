@@ -9,6 +9,16 @@ packages:
     - 'nm-connection-editor'
     - 'network-manager-applet'
 
+    # audio
+    - 'pipewire'
+    - 'pipewire-alsa'
+    - 'pipewire-audio'
+    - 'pipewire-jack'
+    - 'pipewire-pulse'
+    - 'gst-plugin-pipewire'
+    - 'wireplumber'
+    - 'pavucontrol'
+
     # dm
     - 'ly'
     
