@@ -17,3 +17,4 @@ packages:
     - 'nwg-displays'
     - 'visual-studio-code-bin'
     - 'brightnessctl'
+    - 'fastfetch'
