@@ -9,6 +9,7 @@ packages:
     - 'nm-connection-editor'
     - 'network-manager-applet'
     - 'networkmanager-openvpn'
+    - 'wireguard-tools'
 
     # audio
     - 'pipewire'
