@@ -66,6 +66,7 @@ packages:
     - 'ncdu'
     - 'gnome-font-viewer'
     - 'rsync'
+    - 'swayosd-git'
 
     # gtk
     - 'gtk4'
