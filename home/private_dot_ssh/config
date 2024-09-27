@@ -1,0 +1,37 @@
+Host magikbox
+	HostName magikbox.gthosting.fr
+	User gthosting
+
+Host carpe
+	HostName localhost
+	User edreumon
+	Port 8822
+	ProxyCommand ssh serge -W %h:%p
+
+Host dragon
+	HostName localhost
+	User edreumon
+	Port 8823
+	ProxyCommand ssh serge -W %h:%p
+
+Host nasbdr
+	HostName bdr.evann.dev
+	User evann
+	Port 22001
+
+Host serge
+	HostName serge.evann.dev
+	User evann
+
+Host titan
+	HostName titan.inpt.fr
+	User dreumonte
+
+# Host *.inpt.fr
+# 	User root
+# 	ProxyCommand ssh titan -W %h:%p
+
+Host tao
+	HostName tao.enseeiht.fr
+	User edreumon
+	ProxyCommand ssh titan -W %h:%p
