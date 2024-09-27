@@ -55,6 +55,7 @@ packages:
     - 'lazygit'
     - 'ncdu'
     - 'gnome-font-viewer'
+    - 'rsync'
 
     # gtk
     - 'gtk4'
