@@ -45,6 +45,13 @@ packages:
     - 'gnome-keyring'
     - 'polkit-gnome'
     - 'age'
+
+    # kubernetes
+    - 'kubectl'
+    - 'kubecolor'
+    - 'kubie' # switching
+    - 'krew' # plugins
+    - 'k9s'
     
     - 'kitty'
     - 'firefox-developer-edition'
