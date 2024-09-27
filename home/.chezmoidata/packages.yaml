@@ -8,6 +8,7 @@ packages:
     - 'networkmanager'
     - 'nm-connection-editor'
     - 'network-manager-applet'
+    - 'networkmanager-openvpn'
 
     # audio
     - 'pipewire'
