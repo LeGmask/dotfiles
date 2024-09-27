@@ -44,6 +44,7 @@ packages:
     - 'seahorse'
     - 'gnome-keyring'
     - 'polkit-gnome'
+    - 'age'
     
     - 'kitty'
     - 'firefox-developer-edition'
