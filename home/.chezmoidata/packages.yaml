@@ -40,6 +40,9 @@ packages:
     - 'xdg-user-dirs-gtk'
     - 'xdg-desktop-portal-hyprland'
 
+    # launcher
+    - 'anyrun-git'
+
     # secrets
     - 'seahorse'
     - 'gnome-keyring'
