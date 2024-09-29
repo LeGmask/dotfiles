@@ -70,6 +70,8 @@ packages:
     - 'gnome-font-viewer'
     - 'rsync'
     - 'swayosd-git'
+    - 'libqalculate'
+    - 'discord'
 
     # gtk
     - 'gtk4'
