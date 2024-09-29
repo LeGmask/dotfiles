@@ -29,6 +29,7 @@ packages:
     - 'noto-fonts-cjk'
     - 'noto-fonts-emoji'
     - 'ttf-firacode-nerd'
+    - 'ttf-jetbrains-mono-nerd'
 
     # hyprland ecosystem
     - 'hyprland'
@@ -42,6 +43,9 @@ packages:
 
     # launcher
     - 'anyrun-git'
+
+    # Status bar
+    - 'waybar'
 
     # secrets
     - 'seahorse'
