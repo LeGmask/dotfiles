@@ -35,6 +35,7 @@ packages:
     - 'hyprland'
     - 'hyprlock'
     - 'hypridle'
+    - 'hyprpaper'
 
     # xdg
     - 'xdg-user-dirs'
