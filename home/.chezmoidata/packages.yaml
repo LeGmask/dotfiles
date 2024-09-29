@@ -40,8 +40,11 @@ packages:
     - 'xdg-user-dirs-gtk'
     - 'xdg-desktop-portal-hyprland'
 
+    # themes
+    - 'papirus-icon-theme'
+
     # launcher
-    - 'anyrun-git'
+    - 'walker-bin'
 
     # secrets
     - 'seahorse'
@@ -70,6 +73,7 @@ packages:
     - 'gnome-font-viewer'
     - 'rsync'
     - 'swayosd-git'
+    - 'libqalculate'
 
     # gtk
     - 'gtk4'
