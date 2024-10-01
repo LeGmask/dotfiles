@@ -42,6 +42,9 @@ packages:
     - 'xdg-user-dirs-gtk'
     - 'xdg-desktop-portal-hyprland'
 
+    # keyboard
+    - 'kanata-bin'
+
     # launcher
     - 'anyrun-git'
 
