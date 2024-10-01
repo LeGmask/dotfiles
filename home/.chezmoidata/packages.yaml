@@ -36,12 +36,15 @@ packages:
     - 'hyprlock'
     - 'hypridle'
     - 'hyprpaper'
+    - 'hyprpicker'
 
     # xdg
     - 'xdg-user-dirs'
     - 'xdg-user-dirs-gtk'
     - 'xdg-desktop-portal-hyprland'
 
+    # clipboard
+    - 'wl-clipboard'
     # keyboard
     - 'kanata-bin'
 
@@ -56,6 +59,9 @@ packages:
     - 'gnome-keyring'
     - 'polkit-gnome'
     - 'age'
+
+    # screenshot
+    - 'grimblast-git'
 
     # kubernetes
     - 'kubectl'
