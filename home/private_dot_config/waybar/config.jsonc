@@ -3,7 +3,7 @@
     "layer": "top",
     "position": "top",  // Waybar position (top|bottom|left|right)
     "mod": "dock",
-    "height": 22,
+    "height": 22  ,
     // "width": 1280, // Waybar width
     "exclusive": true,
     "passthrough": false,
@@ -224,7 +224,7 @@
         ]
     },
     "tray": {
-        "icon-size": 24,
+        "icon-size": 14,
         "spacing": 5
     },
     "battery": {
