@@ -100,12 +100,13 @@
   |      RA-6
   ?      S-.
   ^      RA-9
+  \      RA-8
 )
 
 (deflayer symbols
   _    $$1     $$2  $$3  $$4      $$5  $$6  $$7  $$8   $$9  $$0    _  _  _
   _    $^      <    $>   $        $%   $@   &    *     '    $`     _  _  _
-  _    $lcurly lpar rpar $rcurly  =    \    $+   -     $/   dquote _  _
+  _    $lcurly lpar rpar $rcurly  =    $\   $+   -     $/   dquote _  _
   _ _  $~      $[   $]   und      $#   $|   !    ;     :    $?     _
   _    _       _                  _              alt   _    _      _  _  _ 
                                                                    _  _  _
