@@ -3,6 +3,7 @@ packages:
     paru:
     # archlinux
     - 'downgrade'
+    - 'needrestart'
 
     # network
     - 'networkmanager'
