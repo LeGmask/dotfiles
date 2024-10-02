@@ -38,6 +38,7 @@ packages:
     - 'hypridle'
     - 'hyprpaper'
     - 'hyprpicker'
+    - 'hyprcursor'
 
     # xdg
     - 'xdg-user-dirs'
@@ -46,6 +47,7 @@ packages:
 
     # clipboard
     - 'wl-clipboard'
+
     # keyboard
     - 'kanata-bin'
 
