@@ -106,6 +106,7 @@ packages:
     - 'libqalculate'
     - 'discord'
     - 'ldns'
+    - 'pwgen'
 
     # gtk
     - 'gtk4'
