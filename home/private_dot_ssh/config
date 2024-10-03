@@ -35,3 +35,8 @@ Host tao
 	HostName tao.enseeiht.fr
 	User edreumon
 	ProxyCommand ssh titan -W %h:%p
+
+Host git.inpt.fr
+	HostName git.inpt.fr
+	IdentityFile ~/.ssh/ship7
+	IdentitiesOnly yes
