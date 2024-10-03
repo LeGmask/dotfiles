@@ -78,6 +78,7 @@ packages:
     - 'krew' # plugins
     - 'k9s'
     - 'kubeseal'
+    - 'fluxcd'
 
     # shell
     - 'zsh'
