@@ -66,12 +66,27 @@ packages:
     # screenshot
     - 'grimblast-git'
 
+    # docker
+    - 'docker'
+    - 'docker-compose'
+    - 'docker-buildx'
+
     # kubernetes
     - 'kubectl'
     - 'kubecolor'
     - 'kubie' # switching
     - 'krew' # plugins
     - 'k9s'
+    - 'kubeseal'
+
+    # shell
+    - 'zsh'
+    - 'zsh-completions'
+    - 'zsh-antidote'
+    - 'starship'
+
+    # utilities
+    - 'colormake'
     
     - 'kitty'
     - 'firefox-developer-edition'
@@ -89,7 +104,12 @@ packages:
     - 'swayosd-git'
     - 'libqalculate'
     - 'discord'
+    - 'ldns'
 
     # gtk
     - 'gtk4'
     - 'gtk3'
+
+    # nodejs
+    - 'nodejs'
+    - 'yarn'
