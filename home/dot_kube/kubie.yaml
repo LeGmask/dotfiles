@@ -1,7 +1,7 @@
 # Force kubie to use a particular shell, if unset detect shell currently in use.
 # Possible values: bash, dash, fish, xonsh, zsh
 # Default: unset
-shell: bash
+shell: zsh
 
 # For the commands `kubie edit/edit-config`
 # Possible values: Any installed text editor
@@ -10,7 +10,6 @@ default_editor: vim
 
 # Configure where to look for kubernetes config files.
 configs:
-
     # Include these globs.
     # Default: values listed below.
     include:
@@ -77,15 +76,14 @@ behavior:
 
 # Optional start and stop hooks
 hooks:
-    # A command hook to run when a CTX is started.  
+    # A command hook to run when a CTX is started.
     # This example re-labels your terminal window
     # Default: none
-    start_ctx: >
-        echo -en "\033]1; `kubie info ctx`|`kubie info ns` \007"
+    # start_ctx: >
+    # echo -en "\033]1; `kubie info ctx`|`kubie info ns` \007"
 
     # A command hook to run when a CTX is stopped
     # This example sets the terminal back to the shell name
     # Default: none
-    stop_ctx: >
-        echo -en "\033]1; $SHELL \007"
-
+    # stop_ctx: >
+    # echo -en "\033]1; $SHELL \007"
