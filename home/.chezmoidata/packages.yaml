@@ -66,6 +66,9 @@ packages:
     # screenshot
     - 'grimblast-git'
 
+    # notifications
+    - 'dunst'
+
     # docker
     - 'docker'
     - 'docker-compose'
