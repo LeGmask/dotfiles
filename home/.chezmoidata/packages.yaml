@@ -31,6 +31,7 @@ packages:
     - 'noto-fonts-emoji'
     - 'ttf-firacode-nerd'
     - 'ttf-jetbrains-mono-nerd'
+    - 'ttf-mononoki-nerd'
 
     # hyprland ecosystem
     - 'hyprland'
