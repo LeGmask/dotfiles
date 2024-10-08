@@ -89,6 +89,8 @@ packages:
     - 'zsh-completions'
     - 'zsh-antidote'
     - 'starship'
+    - 'zoxide'
+    - 'eza'
 
     # utilities
     - 'colormake'
