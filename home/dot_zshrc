@@ -13,5 +13,6 @@ zstyle ':omz:plugins:eza' 'icons' yes
 [ "$TERM" = "xterm-kitty" ] && alias ssh="kssh"
 alias ls="eza --git --icons=auto"
 alias lst="ls --tree"
+alias ip="ip -c"
 alias make="colormake"
 alias kubectl="kubecolor"
