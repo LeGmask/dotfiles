@@ -1,0 +1,117 @@
+#!/bin/zsh
+#
+# .zsh_plugins.txt - antidote plugins file
+#
+
+### Overview
+#
+# The `.zsh_plugins.txt` file is used by antidote to configure Zsh bundles. Bundles are
+# just a fancy way of referring to Zsh utilities, frameworks, prompts, or plugins.
+# `.zsh_plugins.txt` is used by antidote to generate a static `.zsh_plugins.zsh` file,
+# which can then be sourced in your `.zshrc`. You can use this file as a starting point
+# for your own config. Strip out instructional comments (ie: lines beginning with a '#')
+# and any plugins you don't need, then add what you like and make it yours!
+#
+# NOTE: Order matters in this file! Some bundles need to be last, and others are
+# prerequisites. Read the documentation for the plugins you use to ensure proper
+# configuration.
+#
+###
+
+### Completions
+#
+# You may want to add some additional completions to Zsh. Completions look in your fpath
+# for completion functions, which are functions named with a leading underscore
+# (eg: _git). You need to add all supplemental completions to your fpath prior to
+# running `compinit` to use completions functionality properly. You will want to find
+# a completion plugin that runs `compinit` for you, or you can run it yourself in
+# your .zshrc after antidote loads like this:
+#
+#   autoload -Uz compinit && compinit
+#
+###
+
+# zsh-users/zsh-completions is a popular plugin for adding supplemental completions.
+# We combine the `path:` and `kind:fpath` annotations here:
+zsh-users/zsh-completions path:src kind:fpath
+
+# This is the recommended plugin for handling compinit and setting completion zstyles.
+# It's designed to handle all the complexity of the Zsh completion system so the user
+# doesn't have to.
+mattmc3/ez-compinit
+
+
+### Regular Plugins
+#
+# Plugins are the simplest kind of bundles. You can point to a full git URL, or if you
+# assume GitHub.com, then you can use the user/repo shorthand.
+#
+###
+peterhurford/up.zsh
+rummik/zsh-tailf
+
+### Frameworks
+#
+# Frameworks are a collection of Zsh features, settings, and plugins meant to ease
+# Zsh configuration. Unfortunately, all that power can come with serious drawbacks.
+# Frameworks can often set more settings or aliases than you need, cluttering your Zsh
+# config and slowing things down. Use with caution!
+#
+# Frameworks are handled in antidote using the `path:location/of/plugin` annotation.
+#
+###
+
+### Framework: Oh-My-Zsh
+#
+# Oh-My-Zsh is a very popular Zsh framework. You might choose to use plugins from OMZ
+# in your own config. Depending on which plugins you use, you may also need to include
+# OMZ's entire "lib" directory. If you do this, be careful - "lib" configures a lot of
+# very broad settings. If you are familiar with what you are doing, you may choose to
+# only include parts of "lib".
+#
+#   # use all of lib
+#   ohmyzsh/ohmyzsh path:lib
+#   # -OR-, only use only the specific files we care about
+#   ohmyzsh/ohmyzsh path:lib/clipboard.zsh
+#
+####
+
+getantidote/use-omz                             # handle OMZ dependencies
+ohmyzsh/ohmyzsh path:lib                        # load OMZ's library
+# load OMZ plugins
+ohmyzsh/ohmyzsh path:plugins/colored-man-pages  
+ohmyzsh/ohmyzsh path:plugins/copybuffer
+ohmyzsh/ohmyzsh path:plugins/copyfile
+ohmyzsh/ohmyzsh path:plugins/copypath
+ohmyzsh/ohmyzsh path:plugins/extract
+ohmyzsh/ohmyzsh path:plugins/fluxcd
+ohmyzsh/ohmyzsh path:plugins/git
+ohmyzsh/ohmyzsh path:plugins/kitty
+ohmyzsh/ohmyzsh path:plugins/kubectl
+ohmyzsh/ohmyzsh path:plugins/magic-enter
+ohmyzsh/ohmyzsh path:plugins/zoxide
+
+### Deferred Plugins
+#
+# Antidote allows you to defer loading plugins. This is similar to concepts like "turbo
+# mode" in other plugin managers. Antidote handles deferring plugins by leveraging
+# romkatv/zsh-defer, which "defers execution of a zsh command until zsh has nothing else
+# to do and is waiting for user input". In general, you should not defer plugins unless
+# you know for sure they properly support deferred loading, and there are no adverse
+# side-effects (see: https://github.com/romkatv/zsh-defer#Caveats). However, for
+# certain plugins, this can greatly increase your zsh startup speed.
+#
+###
+
+# Syntax highlighting
+zdharma-continuum/fast-syntax-highlighting kind:defer
+
+### Final Plugins
+#
+# Remember plugin order matters! Put plugins that need run last at the bottom of your
+# .zsh_plugins.txt file.
+#
+###
+
+# These popular core plugins should be loaded at the end
+zsh-users/zsh-autosuggestions
