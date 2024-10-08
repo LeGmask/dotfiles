@@ -49,6 +49,7 @@ mattmc3/ez-compinit
 ###
 peterhurford/up.zsh
 rummik/zsh-tailf
+atuinsh/atuin
 
 ### Frameworks
 #
