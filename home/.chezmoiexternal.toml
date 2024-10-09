@@ -1,0 +1,7 @@
+[".config/k9s/skins"]
+type = "archive"
+url = "https://github.com/catppuccin/k9s/archive/main.tar.gz"
+exact = false
+stripComponents = 2
+refreshPeriod = "168h"
+include = ["**/dist/*.yaml"]
