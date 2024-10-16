@@ -21,6 +21,7 @@ packages:
     - 'gst-plugin-pipewire'
     - 'wireplumber'
     - 'pavucontrol'
+    - 'noisetorch-bin'
 
     # dm
     - 'ly'
