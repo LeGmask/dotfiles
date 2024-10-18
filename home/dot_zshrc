@@ -8,6 +8,9 @@ eval "$(atuin init zsh --disable-up-arrow)"
 zstyle ':omz:plugins:eza' 'git-status' yes
 zstyle ':omz:plugins:eza' 'icons' yes
 
+# Alias definitions.
+setopt complete_aliases
+
 # opam configuration
 [[ ! -r /home/evann/.opam/opam-init/init.zsh ]] || source /home/evann/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
 
@@ -16,4 +19,6 @@ alias ls="eza --git --icons=auto"
 alias lst="ls --tree"
 alias ip="ip -c"
 alias make="colormake"
-alias kubectl="kubecolor"
+
+alias kubectl=kubecolor
+compdef kubecolor=kubectl
