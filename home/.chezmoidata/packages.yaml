@@ -8,6 +8,7 @@ packages:
 
     # network
     - 'networkmanager'
+    - 'networkmanager-dispatcher-chrony'
     - 'nm-connection-editor'
     - 'network-manager-applet'
     - 'networkmanager-openvpn'
