@@ -4,6 +4,7 @@ packages:
     # archlinux
     - 'downgrade'
     - 'needrestart'
+    - 'chrony'
 
     # network
     - 'networkmanager'
