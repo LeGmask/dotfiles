@@ -117,6 +117,7 @@ packages:
     - 'discord'
     - 'ldns'
     - 'pwgen'
+    - 'termshark'
 
     # gtk
     - 'gtk4'
