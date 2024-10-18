@@ -1,7 +1,8 @@
 services:
   linux:
     system:
-      - 'ly.service'
-      - 'swayosd-libinput-backend.service'
+      - "ly.service"
+      - "swayosd-libinput-backend.service"
+      - "chronyd.service"
     user:
-      - 'gcr-ssh-agent.socket'
+      - "gcr-ssh-agent.socket"
