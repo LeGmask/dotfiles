@@ -6,6 +6,10 @@ packages:
     - 'needrestart'
     - 'chrony'
 
+    # Hardware acceleration
+    - 'libva-mesa-driver'
+    - 'mesa-vdpau'
+
     # network
     - 'networkmanager'
     - 'networkmanager-dispatcher-chrony'
