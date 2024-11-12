@@ -14,6 +14,10 @@ setopt complete_aliases
 # opam configuration
 [[ ! -r /home/evann/.opam/opam-init/init.zsh ]] || source /home/evann/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
 
+# go configuration
+export GOPATH=$HOME/.go
+export PATH=$PATH:$GOPATH/bin
+
 [ "$TERM" = "xterm-kitty" ] && alias ssh="kssh"
 alias ls="eza --git --icons=auto"
 alias lst="ls --tree"
