@@ -17,6 +17,8 @@ packages:
     - 'network-manager-applet'
     - 'networkmanager-openvpn'
     - 'wireguard-tools'
+    - 'traceroute'
+    - 'whois'
 
     # audio
     - 'pipewire'
