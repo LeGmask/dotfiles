@@ -100,6 +100,7 @@ packages:
     - 'zoxide'
     - 'eza'
     - 'atuin'
+    - 'ranger'
 
     # utilities
     - 'colormake'
