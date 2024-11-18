@@ -1,0 +1,8 @@
+profile {
+	output  eDP-1 disable
+	output "Iiyama North America PL3494WQ 1214142220176" mode 3440x1440@120 position 0,0
+}
+
+profile {
+	output eDP-1 enable
+}

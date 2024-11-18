@@ -30,6 +30,9 @@ packages:
     - 'pavucontrol'
     - 'noisetorch-bin'
 
+    # display
+    - 'kanshi'
+
     # dm
     - 'ly'
     
