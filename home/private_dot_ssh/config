@@ -40,3 +40,8 @@ Host git.inpt.fr
 	HostName git.inpt.fr
 	IdentityFile ~/.ssh/ship7
 	IdentitiesOnly yes
+
+Host pikachu
+	HostName 10.0.0.2
+	User emma
+	ProxyCommand ssh serge -W %h:%p
