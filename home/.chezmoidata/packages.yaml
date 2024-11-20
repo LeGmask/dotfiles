@@ -134,6 +134,7 @@ packages:
 
     # nodejs
     - 'nodejs'
+    - 'yarn'
 
     # go
     - 'go'
