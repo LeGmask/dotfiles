@@ -113,6 +113,7 @@ packages:
     - 'visual-studio-code-bin'
     - 'nautilus'
     - 'vlc'
+    - 'spotify-launcher'
 
     - 'brightnessctl'
     - 'fastfetch'
