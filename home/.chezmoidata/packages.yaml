@@ -139,3 +139,6 @@ packages:
 
     # go
     - 'go'
+
+    # python
+    - 'uv'
