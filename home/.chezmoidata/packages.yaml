@@ -114,6 +114,7 @@ packages:
     - 'nautilus'
     - 'vlc'
     - 'spotify-launcher'
+    - 'wget'
 
     - 'brightnessctl'
     - 'fastfetch'
