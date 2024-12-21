@@ -46,6 +46,7 @@ packages:
 
     # hyprland ecosystem
     - 'hyprland'
+    - 'hyprland-qtutils'
     - 'hyprlock'
     - 'hypridle'
     - 'hyprpaper'
