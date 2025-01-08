@@ -1,47 +1,54 @@
-Host magikbox
-	HostName magikbox.gthosting.fr
-	User gthosting
-
-Host carpe
-	HostName localhost
-	User edreumon
-	Port 8822
-	ProxyCommand ssh serge -W %h:%p
-
-Host dragon
-	HostName localhost
-	User edreumon
-	Port 8823
-	ProxyCommand ssh serge -W %h:%p
-
-Host nasbdr
-	HostName bdr.evann.dev
-	User evann
-	Port 22001
-
+#
+# My personal hosts
+#
 Host serge
 	HostName serge.evann.dev
 	User evann
 
-Host titan
-	HostName titan.inpt.fr
-	User dreumonte
+Host bernard
+	HostName bernard.evann.dev
+	User evann
 
-# Host *.inpt.fr
-# 	User root
-# 	ProxyCommand ssh titan -W %h:%p
+Host pikachu
+	HostName 10.0.0.2
+	User emma
+	ProxyCommand ssh serge -W %h:%p
+
+Host nasbdr
+	HostName nasbdr.evann.dev
+	User evann
+	Port 22001
+
+#
+# ENSEEIHT TP hosts
+#
+Host carpe
+	HostName carpe.enseeiht.fr
+	User edreumon
+	ProxyCommand ssh titan -W %h:%p
+
+Host dragon
+	HostName dragon.enseeiht.fr
+	User edreumon
+	ProxyCommand ssh titan -W %h:%p
 
 Host tao
 	HostName tao.enseeiht.fr
 	User edreumon
 	ProxyCommand ssh titan -W %h:%p
 
+#
+# INP-net / net7 hosts
+#
+Host titan
+	HostName titan.inpt.fr
+	User dreumonte
+
 Host git.inpt.fr
 	HostName git.inpt.fr
 	IdentityFile ~/.ssh/ship7
 	IdentitiesOnly yes
 
-Host pikachu
-	HostName 10.0.0.2
-	User emma
-	ProxyCommand ssh serge -W %h:%p
+# Host *.inpt.fr
+# 	User root
+# 	ProxyCommand ssh titan -W %h:%p
