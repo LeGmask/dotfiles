@@ -116,6 +116,7 @@ packages:
     - 'vlc'
     - 'spotify-launcher'
     - 'wget'
+    - 'yq'
 
     - 'brightnessctl'
     - 'fastfetch'
