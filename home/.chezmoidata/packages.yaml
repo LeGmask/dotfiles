@@ -131,6 +131,7 @@ packages:
     - 'ldns'
     - 'pwgen'
     - 'termshark'
+    - 'heynote'
 
     # gtk
     - 'gtk4'
