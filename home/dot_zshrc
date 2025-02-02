@@ -11,8 +11,10 @@ zstyle ':omz:plugins:eza' 'icons' yes
 # Alias definitions.
 setopt complete_aliases
 
-# opam configuration
-[[ ! -r /home/evann/.opam/opam-init/init.zsh ]] || source /home/evann/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
+# archlinux tools configuration / aliases
+export ARCHWEB_USERNAME="LeGmask"
+
+alias signoff='ARCHWEB_PASSWORD="$(secret-tool lookup app archweb)" signoff'
 
 # go configuration
 export GOPATH=$HOME/.go
