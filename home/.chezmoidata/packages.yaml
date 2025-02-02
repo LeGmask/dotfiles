@@ -6,6 +6,9 @@ packages:
     - 'needrestart'
     - 'chrony'
 
+    # archlinux development
+    - 'arch-signoff'
+
     # Hardware acceleration
     - 'mesa'
 
