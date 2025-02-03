@@ -25,6 +25,7 @@ packages:
     # Bluetooth
     - 'bluez'
     - 'bluez-utils'
+    - 'blueman'
 
     # audio
     - 'pipewire'
@@ -138,7 +139,7 @@ packages:
     - 'ldns'
     - 'pwgen'
     - 'termshark'
-    - 'heynote'
+    - 'heynote-bin'
 
     # gtk
     - 'gtk4'
