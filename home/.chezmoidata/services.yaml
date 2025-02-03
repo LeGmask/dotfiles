@@ -4,5 +4,6 @@ services:
       - "ly.service"
       - "swayosd-libinput-backend.service"
       - "chronyd.service"
+      - "bluetooth.service"
     user:
       - "gcr-ssh-agent.socket"

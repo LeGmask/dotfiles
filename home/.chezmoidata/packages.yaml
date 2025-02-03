@@ -21,6 +21,10 @@ packages:
     - 'wireguard-tools'
     - 'mtr'
     - 'whois'
+    
+    # Bluetooth
+    - 'bluez'
+    - 'bluez-utils'
 
     # audio
     - 'pipewire'
