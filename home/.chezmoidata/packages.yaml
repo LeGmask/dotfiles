@@ -136,6 +136,7 @@ packages:
     - 'swayosd-git'
     - 'libqalculate'
     - 'discord'
+    - 'cinny-desktop-bin'
     - 'ldns'
     - 'pwgen'
     - 'termshark'
