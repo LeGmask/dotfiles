@@ -78,6 +78,9 @@ packages:
     # Status bar
     - 'waybar'
 
+    # Logout
+    - 'wlogout-git'
+
     # secrets
     - 'seahorse'
     - 'gnome-keyring'
