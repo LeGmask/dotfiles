@@ -1,113 +1,92 @@
-(deflocalkeys-linux
-  & 2
-  é 3
-  dquote 4
-  ' 5
-  lpar 6
-  - 7
-  è 8
-  und 9
-  ç 10
-  à 11
-  rpar 12
-  a 16
-  z 17
-  ^ 26
-  $ 27
-  q 30
-  m 39
-  ù 40
-  * 43
-  w 44
-  , 50
-  ; 51
-  : 52
-  ! 53
-)
+;;==========================================================================;;
+;;                                                                          ;;
+;;  With Arsenik, choose the features you want for your keyboard:           ;;
+;;  angle mods, Vim-like navigation layer, Mac/Azerty/Qwertz support, etc.  ;;
+;;                                                                          ;;
+;;==========================================================================;;
 
-(defsrc
-  grv     1    2    3    4    5    6    7    8    9    0    rpar =    bspc
-  tab     a    z    e    r    t    y    u    i    o    p    ^    $    ret
-  caps    q    s    d    f    g    h    j    k    l    m    ù    *
-  lsft <  w    x    c    v    b    n    ,    ;    :    !    rsft
-  lctl    lmet lalt           spc            ralt prnt rctl pgup up   pgdn 
-                                                            left down right
-)
+;; Every section is mandatory and should enable one and only one `include`
+;; - enable each feature by un-commenting the related line.
+;; - a commented line starts with ;;
 
-(defalias
-  ralt (layer-toggle symbols)
+;; Live-reload the configuration with Space+Backspace (requires layer-taps).
 
-  azt (layer-switch azerty)
-  aze (layer-switch azerty-ergol)
-
-  cap (tap-hold 50 200 end caps)
-  grv (tap-hold 50 200 grv (layer-toggle layers))
-)
-
-;; The first layer defined is the layer that will be active by default when
-;; kanata starts up. This layer is the standard QWERTY layout except for the
-;; backtick/grave key (@grl) which is an alias for a tap-hold key.
-(deflayer azerty-ergol
-  @grv    1    2    3    4    5    6    7    8     9    0    rpar =    bspc
-  tab     a    z    e    r    t    y    u    i     o    p    ^    $    ret
-  @cap    q    s    d    f    g    h    j    k     l    m    ù    *
-  lsft <  w    x    c    v    b    n    ,    ;     :    !    rsft
-  lctl    lmet lalt           spc            @ralt prnt rctl pgup up  pgdn 
-                                                             left down right
-)
-
-(deflayer azerty
-  @grv    1    2    3    4    5    6    7    8    9    0    rpar =    bspc
-  tab     a    z    e    r    t    y    u    i    o    p    ^    $    ret
-  caps    q    s    d    f    g    h    j    k    l    m    ù    *
-  lsft <  w    x    c    v    b    n    ,    ;    :    !    rsft
-  lctl    lmet lalt           spc            ralt prnt rctl pgup up   pgdn 
-                                                            left down right
-)
-
-(deflayer layers
-  _   @aze @azt _  _  _  _  _  _  _  _  _  _  _
-  _   _    _    _  _  _  _  _  _  _  _  _  _  lrld
-  _   _    _    _  _  _  _  _  _  _  _  _  _
-  _ _ _    _    _  _  _  _  _  _  _  _  _  _
-  _   _    _          _           _  _  _  _  _ 
-                                        _  _  _
-)
-
+;; Timing variables for tap-hold effects.
 (defvar
-  $1     S-1
-  $2     S-2
-  $3     S-3
-  $4     S-4
-  $5     S-5
-  $6     S-6
-  $7     S-7
-  $8     S-8
-  $9     S-9
-  $0     S-0
-  lcurly RA-4
-  rcurly RA-=
-  >      S-<
-  %      S-ù
-  @      RA-0
-  `      RA-7 
-  +      S-=
-  /      S-:
-  ~      RA-2
-  [      RA-5
-  ]      RA-rpar
-  #      RA-3
-  |      RA-6
-  ?      S-.
-  ^      RA-9
-  \      RA-8
+  ;; The key must be pressed twice in 200ms to enable repetitions.
+  tap_timeout 200
+  ;; The key must be held 200ms to become a layer shift.
+  hold_timeout 200
+  ;; Slightly higher value for typing keys, to prevent unexpected hold effect.
+  long_hold_timeout 300
 )
 
-(deflayer symbols
-  _    $$1     $$2  $$3  $$4      $$5  $$6  $$7  $$8   $$9  $$0    _  _  _
-  _    $^      <    $>   $        $%   $@   &    *     '    $`     _  _  _
-  _    $lcurly lpar rpar $rcurly  =    $\   $+   -     $/   dquote _  _
-  _ _  $~      $[   $]   und      $#   $|   !    ;     :    $?     _
-  _    _       _                  _              alt   _    _      _  _  _ 
-                                                                   _  _  _
+;;-----------------------------------------------------------------------------
+;; Original key arrangement on your keyboard: Mac or PC.
+;; Choose here if you want to add an angle mod: ZXCVB are shifted to the left.
+;; See https://colemakmods.github.io/ergonomic-mods/angle.html for more details.
+
+(include defsrc/pc.kbd)  ;; PC, standard finger assignment
+;; (include defsrc/mac.kbd)  ;; Mac, standard finger assignment
+;; (include defsrc/pc_anglemod.kbd)  ;; PC, ZXCVB are shifted to the left
+;; (include defsrc/mac_anglemod.kbd)  ;; Mac, ZXCVB are shifted to the left
+;; (include defsrc/pc_wide_anglemod.kbd)  ;; PC, angle-mod + right hand shifted by one key
+;; (include defsrc/mac_wide_anglemod.kbd)  ;; Mac, angle-mod + right hand shifted by one key
+
+
+;;-----------------------------------------------------------------------------
+;; `Base` layer: standard or dual keys? (layer-taps, homerow mods?)
+;; If you just want angle mod, you still have to enable the standard base.
+
+;; (include deflayer/base.kbd)  ;; standard keyboard behavior
+;; (include deflayer/base_lt.kbd)  ;; layer-taps on both thumb keys
+(include deflayer/base_lt_hrm.kbd)  ;; layer-taps + home-row mods
+
+;; Note: not enabling layer-taps here makes the rest of the file useless.
+
+
+;;-----------------------------------------------------------------------------
+;; `Symbols` layer
+
+;; (include deflayer/symbols_noop.kbd)  ;; AltGr stays as-is
+;; (include deflayer/symbols_lafayette.kbd)  ;; AltGr programmation layer like Ergo‑L
+;; (include deflayer/symbols_noop_num.kbd)  ;; AltGr stays as-is + NumRow layers
+(include deflayer/symbols_lafayette_num.kbd)  ;; AltGr prog layer + NumRow layers
+
+
+;;-----------------------------------------------------------------------------
+;; `Navigation` layer: ESDF or HJKL?
+
+;; (include deflayer/navigation.kbd)  ;; ESDF on the left, NumPad on the right
+(include deflayer/navigation_vim.kbd)  ;; HJKL + NumPad on [Space]+[Q]
+
+;; Replace XX by the keyboard shortcut of your application launcher, if any.
+;; Mapped on [Space]+[P] in both navigation layers.
+
+;; (defalias run M-p)  ;; [Command]-[P]
+(defalias run XX)  ;; do nothing
+
+
+;;-----------------------------------------------------------------------------
+;; Aliases for `Symbols` and `Navigation` layers
+;; Depends on PC/Mac and keyboard layout
+
+;; (include defalias/ergol_pc.kbd)  ;; Ergo‑L PC
+;; (include defalias/qwerty-lafayette_pc.kbd)  ;; Qwerty‑Lafayette PC
+;; (include defalias/qwerty_pc.kbd)  ;; Qwerty / Colemak PC
+;; (include defalias/qwerty_mac.kbd)  ;; Qwerty / Colemak Mac
+(include defalias/azerty_pc.kbd)  ;; Azerty PC
+;; (include defalias/qwertz_pc.kbd)  ;; Qwertz PC
+;; (include defalias/bepo_pc.kbd)  ;; Bépo PC
+;; (include defalias/optimot_pc.kbd)  ;; Optimot PC
+
+;;-----------------------------------------------------------------------------
+;; Extra configuration
+;; You should not modify this, only if you need to.
+
+(defcfg
+  ;; Enabled makes kanata process keys that are not defined in defsrc
+  process-unmapped-keys yes
 )
+
+;; vim: set ft=lisp
