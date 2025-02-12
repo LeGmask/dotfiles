@@ -2,7 +2,7 @@
 ;; but enables a NumRow.
 
 (deflayer symbols
-  AG-1 AG-2 AG-3 AG-4 AG-5 XX   AG-6 AG-7 AG-8 AG-9 AG-0
+  AG-1 AG-2 AG-3 AG-4 AG-5 bspc   AG-6 AG-7 AG-8 AG-9 AG-0
   @^   @<   @>   @$   @%        @@   @&   @*   @'   @`
   @{   @pl  @pr  @}   @=        @\   @+   @-   @/   @''
   @~   @[   @]   @_   @#   XX   @|   @!   @;   @:   @?
