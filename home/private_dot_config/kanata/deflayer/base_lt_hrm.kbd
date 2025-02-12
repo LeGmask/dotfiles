@@ -3,7 +3,7 @@
 (deflayer base
   _    _    _    _    _    _    _    _    _    _    _
   q    w    e    r    t         y    u    i    o    p
-  a    @ss  @dd  @ff  g         h    @jj  @kk  @ll  ;
+  a    @ss  @dd  @ff  g  @caps  h    @jj  @kk  @ll  ;
   z    x    c    v    b    <    n    m    ,    .    /
             @sft          @nav            @sym
 )
@@ -26,6 +26,9 @@
   jj (tap-hold $tap_timeout $long_hold_timeout j lalt)
   kk (tap-hold $tap_timeout $long_hold_timeout k rctl)
   ll (tap-hold $tap_timeout $long_hold_timeout l rmet)
+
+  ;; CapsLock mod-tap: CapsLock when held, Esc when tapped.
+  caps (tap-hold $tap_timeout $hold_timeout end caps)
 )
 
 ;; vim: set ft=lisp
