@@ -16,6 +16,12 @@
 ;; layer-taps + home-row mods
 (include deflayer/base_lt_hrm.kbd)
 
+;; Base pc layer
+(include deflayer/base.kbd)
+
+;; Layers layer (for layer-switching)
+(include deflayer/layers.kbd)
+
 ;; `Symbols` layer
 (include deflayer/symbols_lafayette_num.kbd)  ;; AltGr prog layer + NumRow layers
 
