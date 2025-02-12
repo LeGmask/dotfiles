@@ -1,0 +1,25 @@
+;; layer-switch layer:
+;;  - base_pc (standard keyboard behavior)
+;;  - azerty_arsenik (Azerty Arsenik)
+
+;; Base pc layer (standard keyboard behavior)
+(deflayer base_pc
+  _    _    _    _    _    _    _    _    _    _    _
+  q    w    e    r    t   @grv  y    u    i    o    p
+  a    s    d    f    g    _    h    j    k    l    ;
+  z    x    c    v    b    <    n    m    ,    .    /
+            _              _              _
+)
+
+(deflayer layers
+  @lb @bp _   _   _   _   _   _   _   _   _
+  _   _   _   _   _   _   _   _   _   _   _
+  _   _   _   _   _   _   _   _   _   _   _
+  _   _   _   _   _   _   _   _   _   _   _
+      _               _             _
+)
+
+(defalias
+  lb (layer-switch base)
+  bp (layer-switch base_pc)
+)
