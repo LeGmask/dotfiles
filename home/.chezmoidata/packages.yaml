@@ -21,6 +21,7 @@ packages:
     - 'wireguard-tools'
     - 'mtr'
     - 'whois'
+    - 'ipcalc'
     
     # Bluetooth
     - 'bluez'
