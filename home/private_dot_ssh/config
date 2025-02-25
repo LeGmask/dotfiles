@@ -49,6 +49,9 @@ Host git.inpt.fr
 	IdentityFile ~/.ssh/ship7
 	IdentitiesOnly yes
 
-# Host *.inpt.fr
-# 	User root
-# 	ProxyCommand ssh titan -W %h:%p
+Host alpha epsilon iota lambda omega sigma hephaistos apollon athena wazuh moros titan gamma dnepr ares discover zeus hera morpheus neo galileo leto dupont dupond hermes k8s0?  rancher0? castor pollux leda hubble
+	User dreumonte
+	HostName %h.bde.inp
+
+Host *.bde.inp *.inpt.fr
+	User dreumonte
