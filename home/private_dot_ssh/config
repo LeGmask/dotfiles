@@ -49,7 +49,7 @@ Host git.inpt.fr
 	IdentityFile ~/.ssh/ship7
 	IdentitiesOnly yes
 
-Host alpha epsilon iota lambda omega sigma hephaistos hera leto poseidon neo ares apollon galileo gamma discover titan athena zeus wazuh dnepr moros morpheus delta k8s0?  rancher0? castor pollux leda hubble
+Host alpha epsilon iota lambda omega sigma hephaistos hera leto poseidon neo ares apollon galileo gamma discover titan athena zeus wazuh dnepr moros morpheus delta ariane k8s0?  rancher0? castor pollux leda hubble hermes
 	User dreumonte
 	HostName %h.bde.inp
 
