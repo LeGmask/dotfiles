@@ -3,20 +3,18 @@
 #
 Host serge
 	HostName serge.evann.dev
-	User evann
 
 Host bernard
 	HostName bernard.evann.dev
-	User evann
+
+Host marcel
+	HostName marcel.evann.dev
 
 Host pikachu
-	HostName 10.0.0.2
-	User emma
-	ProxyCommand ssh serge -W %h:%p
+	HostName pikachu.evann.dev
 
 Host nasbdr
 	HostName nasbdr.evann.dev
-	User evann
 	Port 22001
 
 #
