@@ -25,6 +25,7 @@ alias ls="eza --git --icons=auto"
 alias lst="ls --tree"
 alias ip="ip -c"
 alias make="colormake"
+alias weechat="ssh -t serge docker attach weechat"
 
 alias kubectl=kubecolor
 compdef kubecolor=kubectl
