@@ -17,6 +17,10 @@ Host nasbdr
 	HostName nasbdr.evann.dev
 	Port 22001
 
+Host berryship berryship.evann.dev
+	HostName 10.42.0.5
+	ProxyCommand ssh bernard -W %h:%p
+
 #
 # ENSEEIHT TP hosts
 #
