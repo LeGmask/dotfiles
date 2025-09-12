@@ -66,19 +66,3 @@ Host alpha epsilon iota lambda omega sigma hephaistos hera leto poseidon neo are
 
 Host *.bde.inp *.inpt.fr
 	User dreumonte
-
-
-#
-# GiHub Pro/Perso
-#
-Host github.com
-	User git
-	HostName github.com
-	IdentitiesOnly yes
-	IdentityFile ~/.ssh/ship7
-
-Host deemea.github.com
-	User git
-	HostName github.com
-	IdentitiesOnly yes
-	IdentityFile ~/.ssh/deemea
