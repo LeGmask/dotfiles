@@ -21,6 +21,15 @@ Host berryship berryship.evann.dev
 	HostName 10.42.0.5
 	ProxyCommand ssh bernard -W %h:%p
 
+Host hv01 hv01.evann.dev
+	HostName 10.42.255.1
+	ProxyCommand ssh bernard -W %h:%p
+
+Host pbs pbs.evann.dev
+	HostName 10.42.10.3
+	ProxyCommand ssh bernard -W %h:%p
+
+
 #
 # ENSEEIHT TP hosts
 #
@@ -57,3 +66,19 @@ Host alpha epsilon iota lambda omega sigma hephaistos hera leto poseidon neo are
 
 Host *.bde.inp *.inpt.fr
 	User dreumonte
+
+
+#
+# GiHub Pro/Perso
+#
+Host github.com
+	User git
+	HostName github.com
+	IdentitiesOnly yes
+	IdentityFile ~/.ssh/ship7
+
+Host deemea.github.com
+	User git
+	HostName github.com
+	IdentitiesOnly yes
+	IdentityFile ~/.ssh/deemea
