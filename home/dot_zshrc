@@ -4,6 +4,7 @@ antidote load
 
 eval "$(starship init zsh)"
 eval "$(atuin init zsh --disable-up-arrow)"
+eval "$(scw autocomplete script shell=zsh)"
 
 zstyle ':omz:plugins:eza' 'git-status' yes
 zstyle ':omz:plugins:eza' 'icons' yes
