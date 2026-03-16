@@ -4,5 +4,10 @@ profile {
 }
 
 profile {
+	output  eDP-1 disable
+	output "Dell Inc. DELL U3417W 660X874108DL" mode 3440x1440@59.97Hz position 0,0
+}
+
+profile {
 	output eDP-1 enable
 }
