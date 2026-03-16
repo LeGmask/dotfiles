@@ -2,9 +2,9 @@ ZOXIDE_CMD_OVERRIDE="cd"
 source '/usr/share/zsh-antidote/antidote.zsh'
 antidote load
 
-eval "$(starship init zsh)"
-eval "$(atuin init zsh --disable-up-arrow)"
-eval "$(scw autocomplete script shell=zsh)"
+command -v starship >/dev/null 2>&1 && eval "$(starship init zsh)"
+command -v atuin >/dev/null 2>&1 && eval "$(atuin init zsh --disable-up-arrow)"
+command -v scw >/dev/null 2>&1 && eval "$(scw autocomplete script shell=zsh)"
 
 zstyle ':omz:plugins:eza' 'git-status' yes
 zstyle ':omz:plugins:eza' 'icons' yes
@@ -22,11 +22,13 @@ export GOPATH=$HOME/.go
 export PATH=$PATH:$GOPATH/bin
 
 [ "$TERM" = "xterm-kitty" ] && alias ssh="kssh"
+command -v codium >/dev/null 2>&1 && alias code="codium"
 alias ls="eza --git --icons=auto"
 alias lst="ls --tree"
 alias ip="ip -c"
-alias make="colormake"
 alias weechat="ssh -t serge docker attach weechat"
 
-alias kubectl=kubecolor
-compdef kubecolor=kubectl
+if command -v kubecolor >/dev/null 2>&1; then
+    alias kubectl=kubecolor
+    compdef kubecolor=kubectl
+fi;
