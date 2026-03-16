@@ -1,5 +1,5 @@
 [user]
-	email = 53308142+LeGmask@users.noreply.github.com
+	email = git@evann.dev
 	name = Evann DREUMONT
 	signingkey = /home/evann/.ssh/identity.pub
 [gpg]
