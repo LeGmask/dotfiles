@@ -45,10 +45,6 @@
         "tray",
         "battery",
         "custom/r_end",
-        "custom/l_end",
-        "custom/cliphist",
-        "custom/power",
-        "custom/r_end",
         "custom/padd"
     ],
     // Modules configuration
@@ -225,15 +221,6 @@
         "tooltip-format": "{format_source} {source_desc} // {source_volume}%",
         "scroll-step": 5
     },
-    "custom/updates": {
-        "exec": "systemupdate.sh",
-        "return-type": "json",
-        "format": "{}",
-        "on-click": "hyprctl dispatch exec 'systemupdate.sh up'",
-        "interval": 86400, // once every day
-        "tooltip": true,
-        "signal": 20,
-    },
     "privacy": {
         "icon-size": 10,
         "icon-spacing": 5,
@@ -278,22 +265,6 @@
             "󰂂",
             "󰁹"
         ]
-    },
-    "custom/cliphist": {
-        "format": "{} ",
-        "exec": "echo ; echo 󰅇 clipboard history",
-        "on-click": "sleep 0.1 && cliphist.sh c",
-        "on-click-right": "sleep 0.1 && cliphist.sh d",
-        "on-click-middle": "sleep 0.1 && cliphist.sh w",
-        "interval": 86400, // once every day
-        "tooltip": true
-    },
-    "custom/power": {
-        "format": "{}",
-        "exec": "echo ; echo  logout",
-        "on-click": "wlogout",
-        "interval": 86400, // once every day
-        "tooltip": true
     },
     // modules for padding //
     "custom/l_end": {
