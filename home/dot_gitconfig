@@ -8,3 +8,5 @@
 	gpgsign = true
 [init]
 	defaultBranch = master
+[rebase]
+	autoSquash = true
