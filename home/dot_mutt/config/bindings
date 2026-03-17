@@ -1,0 +1,15 @@
+bind pager  <up>        previous-line
+bind pager  <down>      next-line
+bind editor <delete>    delete-char
+bind browser     y   exit
+
+# bind index,pager J sidebar-next
+# bind index,pager K sidebar-prev
+# bind index,pager L sidebar-open
+
+macro index,pager y     "<change-folder>?<toggle-mailboxes>"    "show incoming mailboxes list"
+macro index,pager i     "<change-folder>+INBOX<enter>"          "Aller à la boîte de réception"
+macro index,pager S     "<save-message>+Spam<enter>"
+macro index       E     "<tag-pattern>~O | ~N<enter>;N<untag-pattern>.<enter>" "Mark folder as read"
+
+macro index,pager \CB   "<enter-command>toggle sidebar_visible<enter><refresh>"

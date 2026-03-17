@@ -1,0 +1,40 @@
+#
+# Identities
+alternates '^[^@]+@evann\.dev$' '^evann@grifon\.fr$' '^evann.dreumont@(etu\.inp-n7\.fr|etu\.toulouse-inp\.fr)$'
+
+set realname    = "Evann DREUMONT"
+set from        = "evann@evann.dev"
+
+#
+# imap settings
+set     mail_check              = 60
+set     imap_keepalive          = 300
+set     imap_check_subscribed
+unset   imap_passive
+
+set folder    = imaps://kaiminus.swordarmor.fr/
+set spoolfile = +INBOX
+
+set imap_user = evann@evann.dev
+set imap_pass = `secret-tool lookup app mutt account evann@evann.dev`
+
+set imap_check_subscribed="yes"
+set imap_list_subscribed="yes"
+
+# Commons folders
+set trash       = +Trash
+set record      = +Sent
+set postponed   = +Drafts
+
+mailboxes       !
+
+
+#
+# smtp settings
+set smtp_url    = "smtps://$imap_user@kaiminus.swordarmor.fr"
+set smtp_pass   = $imap_pass
+
+#
+# Send hooks
+send2-hook '~f evann.dreumont@etu.inp-n7.fr'            'set smtp_url = "smtp://evann.dreumont@etu.inp-n7.fr@partage.toulouse-inp.fr:587"; set smtp_pass = `secret-tool lookup app mutt account evann.dreumont@etu.inp-n7.fr`'
+send2-hook '~f evann.dreumont@etu.toulouse-inp.fr'      'set smtp_url = "smtp://evann.dreumont@etu.inp-n7.fr@partage.toulouse-inp.fr:587"; set smtp_pass = `secret-tool lookup app mutt account evann.dreumont@etu.inp-n7.fr`'
