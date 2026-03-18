@@ -32,3 +32,6 @@ if command -v kubecolor >/dev/null 2>&1; then
     alias kubectl=kubecolor
     compdef kubecolor=kubectl
 fi;
+
+# pass 
+export PASSWORD_STORE_DIR=/home/evann/dev/password-repo/ULHPC
