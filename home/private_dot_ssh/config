@@ -66,3 +66,9 @@ Host alpha epsilon iota lambda omega sigma hephaistos hera leto poseidon neo are
 
 Host *.bde.inp *.inpt.fr
 	User dreumonte
+
+#
+# ULHPC
+#
+Match !final all
+    Include ~/dev/ulhpc-ssh/ssh/config.d/*
