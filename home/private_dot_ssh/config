@@ -31,6 +31,12 @@ Host pbs pbs.evann.dev
 
 
 #
+# grifon
+#
+Host *.ring.nlnog.net
+	User grifon
+
+#
 # ENSEEIHT TP hosts
 #
 Host carpe
