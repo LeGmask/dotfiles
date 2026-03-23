@@ -29,6 +29,9 @@ Host pbs pbs.evann.dev
 	HostName 10.42.10.3
 	ProxyCommand ssh bernard -W %h:%p
 
+Host ship7
+	HostName 172.17.42.3
+	ProxyCommand ssh access02.grifon.fr -W %h:%p
 
 #
 # grifon
