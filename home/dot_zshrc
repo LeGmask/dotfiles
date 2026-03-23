@@ -34,4 +34,4 @@ if command -v kubecolor >/dev/null 2>&1; then
 fi;
 
 # pass 
-export PASSWORD_STORE_DIR=/home/evann/dev/password-repo/ULHPC
+export PASSWORD_STORE_DIR=$HOME/git/hpc-git.uni.lu/ULHPC/password-repo

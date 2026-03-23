@@ -80,4 +80,4 @@ Host *.bde.inp *.inpt.fr
 # ULHPC
 #
 Match !final all
-    Include ~/dev/ulhpc-ssh/ssh/config.d/*
+    Include ~/git/hpc-git.uni.lu/ULHPC/ulhpc-ssh/ssh/config.d/*
