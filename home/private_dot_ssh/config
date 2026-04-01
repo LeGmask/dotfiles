@@ -33,6 +33,13 @@ Host ship7
 	HostName 172.17.42.3
 	ProxyCommand ssh access02.grifon.fr -W %h:%p
 
+Host hv01 hv02 hv03 hv04 hv05 hv06
+	HostName %h.int.evann.dev
+	ProxyCommand ssh bernard -W %h:%p
+
+Host *.int.evann.dev
+	ProxyCommand ssh bernard -W %h:%p
+
 #
 # grifon
 #
