@@ -88,3 +88,16 @@ Host *.bde.inp *.inpt.fr
 #
 Match !final all
     Include ~/git/hpc-git.uni.lu/ULHPC/ulhpc-ssh/ssh/config.d/*
+
+#
+# G5K
+#
+Host g5k
+  User edreumon
+  Hostname access.grid5000.fr
+  ForwardAgent no
+
+Host *.g5k
+  User edreumon
+  ProxyCommand ssh g5k -W "$(basename %h .g5k):%p"
+  ForwardAgent no
