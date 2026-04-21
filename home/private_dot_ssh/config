@@ -46,6 +46,10 @@ Host *.int.evann.dev
 Host *.ring.nlnog.net
 	User grifon
 
+Host gitlab.grifon.fr git.grifon.fr
+	IdentityFile ~/.ssh/ship7
+	IdentitiesOnly yes
+
 #
 # ENSEEIHT TP hosts
 #
