@@ -5,7 +5,7 @@
 prefer-no-csd
 screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
 
-
+include "environments.kdl"
 include "inputs.kdl"
 include "startup.kdl"
 include "theme.kdl"
