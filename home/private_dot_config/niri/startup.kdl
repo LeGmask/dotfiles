@@ -1,0 +1,12 @@
+spawn-at-startup "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1" // start the authentication dialogue for GUI apps
+spawn-at-startup "hypridle" // start the idle daemon
+spawn-at-startup "swayosd-server" // start the OSD server
+spawn-at-startup "hyprpaper" // start the wallpapers daemon
+spawn-at-startup "waybar" // start the system bar
+spawn-at-startup "blueman-applet" // start the systray app for Bluetooth
+spawn-at-startup "nm-applet --indicator" // start the systray app for Network/Wifi
+spawn-at-startup "dunst" // start notification demon
+spawn-at-startup "kanshi" // start the dynamic display configuration daemon
+spawn-at-startup "batsignal" // start the battery notifications demon
+
+spawn-sh-at-startup "kanata -q" // start the keyboard daemon

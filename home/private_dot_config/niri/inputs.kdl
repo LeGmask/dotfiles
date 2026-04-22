@@ -1,0 +1,18 @@
+input {
+    keyboard {
+        numlock
+        repeat-delay 300
+        xkb {
+            layout "fr"
+        }
+    }
+
+    touchpad {
+        tap
+        natural-scroll
+        disabled-on-external-mouse
+    }
+
+    warp-mouse-to-focus
+    focus-follows-mouse max-scroll-amount="0%"
+}
