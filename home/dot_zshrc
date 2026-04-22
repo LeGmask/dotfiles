@@ -17,9 +17,16 @@ export ARCHWEB_USERNAME="LeGmask"
 
 alias signoff='ARCHWEB_PASSWORD="$(secret-tool lookup app archweb)" signoff'
 
+# local bin
+export PATH=$PATH:$HOME/.local/bin
+
 # go configuration
 export GOPATH=$HOME/.go
 export PATH=$PATH:$GOPATH/bin
+
+# ruby configuration
+export GEM_HOME="$(gem env user_gemhome)"
+export PATH="$PATH:$GEM_HOME/bin"
 
 [ "$TERM" = "xterm-kitty" ] && alias ssh="kssh"
 command -v codium >/dev/null 2>&1 && alias code="codium"
