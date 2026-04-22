@@ -14,7 +14,9 @@
         "custom/padd",
         "custom/l_end",
         "hyprland/workspaces",
+        "niri/workspaces",
         "hyprland/window",
+        "niri/window",
         "custom/r_end",
         "custom/padd"
     ],
