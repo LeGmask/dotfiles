@@ -5,10 +5,11 @@
 prefer-no-csd
 screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
 
+include "animations.kdl"
+include "debug.kdl"
 include "environments.kdl"
 include "inputs.kdl"
+include "keybindings.kdl"
 include "startup.kdl"
 include "theme.kdl"
-include "animations.kdl"
 include "windowrules.kdl"
-include "keybindings.kdl"
