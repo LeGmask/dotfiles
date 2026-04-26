@@ -36,6 +36,12 @@ layout {
 }
 
 
+cursor {
+    xcursor-theme "Bibata-Modern-Classic"
+    xcursor-size 12
+}
+
+
 window-rule {
     match is-window-cast-target=true
 
