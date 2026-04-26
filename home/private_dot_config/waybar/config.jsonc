@@ -63,7 +63,6 @@
         "format": "  {}",
         "separate-outputs": true,
         "rewrite": {
-            "${USER}@${set_sysname}:(.*)": "$1 ",
             "(.*) — Mozilla Firefox": "$1 󰈹",
             "(.*)Mozilla Firefox": "Firefox 󰈹",
             "(.*) - Visual Studio Code": "$1 󰨞",
@@ -72,6 +71,23 @@
             "(.*)Spotify": "Spotify 󰓇",
             "(.*)Steam": "Steam 󰓓"
         },
+        "max-length": 50
+    },
+    "niri/workspaces": {
+        "hide-empty": true
+    },
+    "niri/window": {
+        "format": "{}",
+        "separate-outputs": true,
+        // "rewrite": {
+        //     "(.*) — Firefox Developer Edition": "󰈹 $1",
+        //     "(.*)Firefox Developer Edition": "󰈹 Firefox",
+        //     "(.*) - VSCodium": "󰨞 $1",
+        //     "(.*)VSCodium": "󰨞 Codium",
+        //     "(.*) — Dolphin": "󰉋 $1",
+        //     "(.*)Spotify": "󰓇 Spotify",
+        //     "(.*)Steam": "󰓓 Steam"
+        // },
         "max-length": 50
     },
     "idle_inhibitor": {
