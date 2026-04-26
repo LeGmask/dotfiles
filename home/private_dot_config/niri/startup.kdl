@@ -8,6 +8,7 @@ spawn-at-startup "niriusd" // utility commands for the niri compositor
 spawn-at-startup "nm-applet --indicator" // start the systray app for Network/Wifi
 spawn-at-startup "oniri" "--tiling-layout"
 spawn-at-startup "swayosd-server" // start the OSD server
+spawn-at-startup "vicinae" "server" // start the Raycast like FOSS app on finux daemon
 spawn-at-startup "waybar" // start the system bar
 
 spawn-sh-at-startup "kanata -q" // start the keyboard daemon

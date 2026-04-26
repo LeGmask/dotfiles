@@ -19,8 +19,8 @@ binds {
     // 
     // Apps
     // 
-    Mod+A       hotkey-overlay-title="Run an Application"   { spawn "fuzzel"; }
-    Mod+Space   hotkey-overlay-title="Run an Application"   { spawn "fuzzel"; }
+    Mod+A       hotkey-overlay-title="Run an Application"   { spawn "vicinae" "toggle"; }
+    Mod+Space   hotkey-overlay-title="Run an Application"   { spawn "vicinae" "toggle"; }
     Mod+C       hotkey-overlay-title="Open an Editor"       { spawn "codium" "--ozone-platform-hint=wayland" "--disable-gpu"; }
     Mod+E       hotkey-overlay-title="Open file Explorer"   { spawn "nautilus"; }
     Mod+F       hotkey-overlay-title="Open a Navigator"     { spawn "nirius" "focus-or-spawn" "--app-id" "firefox-developer-edition" "firefox-developer-edition"; }
