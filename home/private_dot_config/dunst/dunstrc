@@ -214,9 +214,8 @@
     enable_recursive_icon_lookup = true
 
     # Set icon theme (only used for recursive icon lookup)
-    icon_theme = Papirus
+    icon_theme = "Papirus, Adwaita"
     # You can also set multiple icon themes, with the leftmost one being used first.
-    # icon_theme = "Adwaita, breeze"
 
     # Align icons left/right/top/off
     icon_position = left
@@ -230,7 +229,7 @@
     max_icon_size = 64
 
     # Paths to default icons (only necessary when not using recursive icon lookup)
-    icon_path = /usr/share/icons/gnome/16x16/status/:/usr/share/icons/gnome/16x16/devices/
+    # icon_path = /usr/share/icons/gnome/16x16/status/:/usr/share/icons/gnome/16x16/devices/
 
     ### History ###
 
@@ -296,7 +295,7 @@
     # discouraged.
     #
     # By enabling this setting dunst will not be able to detect when a monitor
-    # is connected or disconnected which might break follow mode if the screen
+    # is connected or disszconnected which might break follow mode if the screen
     # layout changes.
     force_xinerama = false
 
