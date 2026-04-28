@@ -14,9 +14,12 @@ window-rule {
     match app-id=r#"^org\.keepassxc\.KeePassXC$"#
     match app-id=r#"^org\.gnome\.World\.Secrets$"#
 
-    match app-id=r#"^firefox-developer-edition$"# title=r#"Cinny "#
     match app-id=r#"^firefox-developer-edition$"# title=r#"Bitwarden"#
+    match app-id=r#"^firefox-developer-edition$"# title=r#"Cinny "#
     match app-id=r#"^firefox-developer-edition$"# title=r#"Discord"#
+    match app-id=r#"^firefox-developer-edition$"# title=r#"Microsoft Teams"#
+    match app-id=r#"^firefox-developer-edition$"# title=r#"Outlook"#
+    match app-id=r#"^firefox-developer-edition$"# title=r#"Slack"#
     match app-id=r#"^firefox-developer-edition$"# title=r#"WhatsApp"#
 
     match app-id=r#"^kitty$"# title=r#"^mutt$"#
