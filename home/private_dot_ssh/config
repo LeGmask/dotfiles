@@ -93,6 +93,16 @@ Host *.bde.inp *.inpt.fr
 Match !final all
     Include ~/git/hpc-git.uni.lu/ULHPC/ulhpc-ssh/ssh/config.d/*
 
+Host iris-cluster
+    Hostname access-iris.uni.lu
+	User edreumont
+    Port 8022
+
+Host aion-cluster
+    Hostname access-aion.uni.lu
+	User edreumont
+    Port 8022
+
 #
 # G5K
 #
