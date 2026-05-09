@@ -30,7 +30,7 @@ if [ command -v gem >/dev/null 2>&1 ]; then
     export PATH="$PATH:$GEM_HOME/bin"
 fi
 
-[ "$TERM" = "xterm-kitty" ] && alias ssh="kssh"
+[ "$TERM" = "xterm-kitty" ] && [ -z "$SSH_CONNECTION" ] && alias ssh="kssh"
 command -v codium >/dev/null 2>&1 && alias code="codium"
 alias ls="eza --git --icons=auto"
 alias lst="ls --tree"
@@ -44,3 +44,8 @@ fi;
 
 # pass 
 export PASSWORD_STORE_DIR=$HOME/git/hpc-git.uni.lu/ULHPC/password-repo
+
+# remote session
+if [ -n "$SSH_CONNECTION" ]; then
+	export SSH_AUTH_SOCK=$XDG_RUNTIME_DIR/gcr/ssh
+fi;
