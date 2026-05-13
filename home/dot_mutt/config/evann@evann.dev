@@ -1,6 +1,6 @@
 #
 # Identities
-alternates '^[^@]+@evann\.dev$' '^(evann|contact)@grifon\.fr$' '^ca@lists\.grifon\.fr$' '^evann.dreumont@(etu\.inp-n7\.fr|etu\.toulouse-inp\.fr)$'
+alternates '^[^@]+@evann\.dev$' '^evann@grifon\.fr$' '^evann.dreumont@(etu\.inp-n7\.fr|etu\.toulouse-inp\.fr)$'
 
 set realname    = "Evann DREUMONT"
 set from        = "evann@evann.dev"
