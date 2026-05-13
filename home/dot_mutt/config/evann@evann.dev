@@ -38,3 +38,7 @@ set smtp_pass   = $imap_pass
 # Send hooks
 send2-hook '~f evann.dreumont@etu.inp-n7.fr'            'set smtp_url = "smtp://evann.dreumont@etu.inp-n7.fr@partage.toulouse-inp.fr:587"; set smtp_pass = `secret-tool lookup app mutt account evann.dreumont@etu.inp-n7.fr`'
 send2-hook '~f evann.dreumont@etu.toulouse-inp.fr'      'set smtp_url = "smtp://evann.dreumont@etu.inp-n7.fr@partage.toulouse-inp.fr:587"; set smtp_pass = `secret-tool lookup app mutt account evann.dreumont@etu.inp-n7.fr`'
+
+#
+# Reply hooks
+reply-hook '~h ^List-Id:.*ca\.lists\.grifon\.fr'        'set from=evann@grifon.fr; my_hdr Reply-To: contact@grifon.fr'
