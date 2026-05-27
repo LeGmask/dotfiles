@@ -7,7 +7,7 @@ color attachment    color5  default         # Attachments are Pink
 color signature     color7  default         # Signatures are Surface 2
 color search        color4  default         # Highlighted results are Blue
 
-color indicator     default color7          # currently highlighted message Surface 2=Background Text=Foreground
+color indicator     color0  color15         # currently highlighted message Surface 2=Background Text=Foreground
 color error         color1  default         # error messages are Red
 color status        color8  default         # status line "Subtext 0"
 color tree          color8  default         # thread tree arrows Subtext 0
