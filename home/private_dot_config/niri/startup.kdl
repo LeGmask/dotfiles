@@ -3,8 +3,8 @@ spawn-at-startup "awww-daemon" // start the wallpapers daemon
 spawn-at-startup "batsignal" // start the battery notifications demon
 spawn-at-startup "blueman-applet" // start the systray app for Bluetooth
 spawn-at-startup "darkman" "run" // Framework for dark-mode and light-mode transitions on Linux desktop
-spawn-at-startup "dunst" // start notification demon
 spawn-at-startup "kanshi" // start the dynamic display configuration daemon
+spawn-at-startup "mako" // start notification demon
 spawn-at-startup "niriusd" // utility commands for the niri compositor
 spawn-at-startup "nm-applet --indicator" // start the systray app for Network/Wifi
 spawn-at-startup "oniri" "--tiling-layout"

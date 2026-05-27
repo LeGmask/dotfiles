@@ -1,0 +1,40 @@
+font=FiraCode Nerd Font 10
+border-size=1
+border-radius=5
+padding=12
+margin=4,8
+width=300
+height=100
+max-icon-size=48
+icon-path=/usr/share/icons/Papirus:/usr/share/icons/hicolor
+
+group-by=app-name
+max-history=20
+
+default-timeout=5000
+ignore-timeout=1
+layer=overlay
+anchor=top-right
+outer-margin=8
+
+[urgency=critical]
+default-timeout=0
+
+[mode=dark]
+    background-color=#24273a
+    text-color=#cad3f5
+    border-color=#f0c6c6
+    progress-color=over #363a4f
+
+    [mode=dark urgency=high]
+    border-color=#f5a97f
+
+[mode=light]
+    # Colors
+    background-color=#eff1f5
+    text-color=#4c4f69
+    border-color=#dd7878
+    progress-color=over #ccd0da
+
+    [mode=light urgency=high]
+    border-color=#fe640b
