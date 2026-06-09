@@ -80,7 +80,7 @@ atuinsh/atuin
 getantidote/use-omz                             # handle OMZ dependencies
 ohmyzsh/ohmyzsh path:lib                        # load OMZ's library
 # load OMZ plugins
-ohmyzsh/ohmyzsh path:plugins/colored-man-pages  
+ohmyzsh/ohmyzsh path:plugins/colored-man-pages
 ohmyzsh/ohmyzsh path:plugins/copybuffer
 ohmyzsh/ohmyzsh path:plugins/copyfile
 ohmyzsh/ohmyzsh path:plugins/copypath
@@ -112,6 +112,10 @@ zdharma-continuum/fast-syntax-highlighting kind:defer
 # .zsh_plugins.txt file.
 #
 ###
+
+# Abbreviations support (should be last due to keybind)
+olets/zsh-abbr
+5A6F65/fast-abbr-highlighting
 
 # These popular core plugins should be loaded at the end
 zsh-users/zsh-autosuggestions

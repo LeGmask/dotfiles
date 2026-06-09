@@ -1,7 +1,17 @@
+# zsh-abbr configuration
+autoload -U add-zsh-hook
+ABBR_GET_AVAILABLE_ABBREVIATION=1
+ABBR_LOG_AVAILABLE_ABBREVIATION=1
+ABBR_LOG_AVAILABLE_ABBREVIATION_AFTER=1
+
+# plugins/zoxide configuration
 ZOXIDE_CMD_OVERRIDE="cd"
+
+# antidote
 source '/usr/share/zsh-antidote/antidote.zsh'
 antidote load
 
+# completion
 command -v starship >/dev/null 2>&1 && eval "$(starship init zsh)"
 command -v atuin >/dev/null 2>&1 && eval "$(atuin init zsh --disable-up-arrow)"
 command -v scw >/dev/null 2>&1 && eval "$(scw autocomplete script shell=zsh)"
@@ -42,7 +52,7 @@ if command -v kubecolor >/dev/null 2>&1; then
     compdef kubecolor=kubectl
 fi;
 
-# pass 
+# pass
 export PASSWORD_STORE_DIR=$HOME/git/hpc-git.uni.lu/ULHPC/password-repo
 
 # remote session
