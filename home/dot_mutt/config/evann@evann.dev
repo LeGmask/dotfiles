@@ -42,3 +42,4 @@ send2-hook '~f evann.dreumont@etu.toulouse-inp.fr'      'set smtp_url = "smtp://
 #
 # Reply hooks
 reply-hook '~h ^List-Id:.*ca\.lists\.grifon\.fr'        'set from=evann@grifon.fr; my_hdr Reply-To: contact@grifon.fr'
+reply-hook '!~h ^List-Id:.*ca\.lists\.grifon\.fr'       'unmy_hdr from reply-to'
