@@ -1,7 +1,7 @@
 binds {
-    // 
+    //
     // Misc
-    // 
+    //
     Mod+Shift+E { quit; }
     Mod+Delete  { quit; }
 
@@ -18,11 +18,11 @@ binds {
     Mod+U hotkey-overlay-title="Toggle Light/Dark mode" { spawn "darkman" "toggle"; }
 
 
-    // 
+    //
     // Apps
-    // 
-    Mod+A       hotkey-overlay-title="Run an Application"   { spawn "vicinae" "toggle"; }
-    Mod+Space   hotkey-overlay-title="Run an Application"   { spawn "vicinae" "toggle"; }
+    //
+    Mod+A       hotkey-overlay-title="Run an Application"   { spawn "walker"; }
+    Mod+Space   hotkey-overlay-title="Run an Application"   { spawn "walker"; }
     Mod+C       hotkey-overlay-title="Open an Editor"       { spawn "codium" "--ozone-platform-hint=wayland" "--disable-gpu"; }
     Mod+E       hotkey-overlay-title="Open file Explorer"   { spawn "nautilus"; }
     Mod+F       hotkey-overlay-title="Open a Navigator"     { spawn "nirius" "focus-or-spawn" "--app-id" "firefox-developer-edition" "firefox-developer-edition"; }
@@ -30,9 +30,9 @@ binds {
     Mod+Shift+L hotkey-overlay-title="Lock the Screen"      { spawn "loginctl" "lock-session"; }
 
 
-    // 
+    //
     // SwayOSD
-    // 
+    //
     // Audio control
     XF86AudioRaiseVolume    allow-when-locked=true { spawn "swayosd-client" "--output-volume" "raise"; }
     XF86AudioLowerVolume    allow-when-locked=true { spawn "swayosd-client" "--output-volume" "lower"; }
@@ -49,16 +49,16 @@ binds {
     XF86MonBrightnessDown   allow-when-locked=true { spawn "swayosd-client" "--brightness" "-10"; }
 
 
-    // 
+    //
     // scratchpad
-    // 
+    //
     Mod+S       hotkey-overlay-title="Show scratchpad"          {spawn "nirius" "scratchpad-show-all"; }
     Mod+Shift+S hotkey-overlay-title="Send window to scratchpad"{spawn "nirius" "scratchpad-toggle"; }
 
 
-    // 
+    //
     // Screenshots
-    // 
+    //
     Print       { screenshot; }
     Mod+P       { screenshot; }
     Alt+Print   { screenshot-screen; }
@@ -66,9 +66,9 @@ binds {
     Shift+Print { screenshot-window; }
     Shift+Mod+P { screenshot-window; }
 
-    // 
+    //
     // Screencast
-    // 
+    //
     Mod+I       { set-dynamic-cast-window; }
     Mod+Ctrl+I  { set-dynamic-cast-monitor; }
     Mod+Shift+I { clear-dynamic-cast-target; }
